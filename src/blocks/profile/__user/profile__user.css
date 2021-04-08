@@ -1,6 +1,6 @@
 .profile__user {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   box-sizing: border-box;
   max-width: calc(100% - 190px);
