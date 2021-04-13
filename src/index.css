@@ -36,6 +36,7 @@
 @import url('./blocks/place/__like-count/place__like-count.css');
 @import url('./blocks/place/__like-button/_liked/place__like-button_liked.css');
 @import url('./blocks/place/__delete-button/place__delete-button.css');
+@import url('./blocks/place/__delete-button/_hidden/place__delete-button_hidden.css');
 
 @import url('./blocks/footer/footer.css');
 @import url('./blocks/footer/__copyright/footer__copyright.css');

@@ -51,18 +51,16 @@ class Api {
     }).then(checkApiRes);
   }
 
-  likeCard(cardId) {
-    return fetch(`${this._url}cards/likes/${cardId}`, {
-      method: 'PUT',
-      headers: this._headers
-    }).then(checkApiRes);
-  }
-
-  unlikeCard(cardId) {
-    return fetch(`${this._url}cards/likes/${cardId}`, {
-      method: 'DELETE',
-      headers: this._headers
-    }).then(checkApiRes);
+  changeCardLikeStatus(cardId, isLiked) {
+    return isLiked
+      ? fetch(`${this._url}cards/${cardId}`, {
+        method: 'DELETE',
+        headers: this._headers
+      }).then(checkApiRes)
+      : fetch(`${this._url}cards/likes/${cardId}`, {
+        method: 'PUT',
+        headers: this._headers
+      }).then(checkApiRes);
   }
 
   changeAvatar(data) {
