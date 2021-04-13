@@ -3,7 +3,7 @@ import Header from "./Header";
 import Main from "./Main";
 import Footer from "./Footer";
 import PopupWithForm from "./PopupWithForm";
-import EditUserPopup from "./EditUserPopup";
+import EditProfilePopup from "./EditProfilePopup";
 import EditAvatarPopup from "./EditAvatarPopup";
 import AddPlacePopup from "./AddPlacePopup";
 import ImagePopup from "./ImagePopup";
@@ -103,7 +103,7 @@ function App() {
         onEditAvatar={handleEditAvatarClick}
       />
       <Footer />
-      <EditUserPopup
+      <EditProfilePopup
         isOpen={isEditUserPopupOpen}
         onClose={closeAllPopups}
         onUserUpdate={handleUserUpdate}
