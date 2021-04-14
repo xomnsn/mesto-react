@@ -71,9 +71,9 @@ function App() {
       .catch(err => console.log(err));
   }
 
-  function handleAddPlaceSubmit(newCard) {
-    api.addCard(newCard)
-      .then(() => setCards([newCard, ...cards]))
+  function handleAddPlaceSubmit(data) {
+    api.addCard(data)
+      .then((newCard) => setCards([newCard, ...cards]))
       .catch(err => console.log(err));
   }
 
