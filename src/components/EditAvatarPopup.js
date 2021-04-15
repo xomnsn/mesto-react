@@ -11,7 +11,7 @@ function EditAvatarPopup(props) {
 
   React.useEffect(() => {
     linkRef.current.value = currentUser.avatar;
-  }, [currentUser]);
+  }, [currentUser, isOpen]);
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -19,8 +19,6 @@ function EditAvatarPopup(props) {
     onAvatarUpdate({
       avatar: linkRef.current.value,
     });
-
-    onClose();
   }
 
   return (

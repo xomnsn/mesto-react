@@ -53,7 +53,7 @@ class Api {
 
   changeCardLikeStatus(cardId, isLiked) {
     return isLiked
-      ? fetch(`${this._url}cards/${cardId}`, {
+      ? fetch(`${this._url}cards/likes/${cardId}`, {
         method: 'DELETE',
         headers: this._headers
       }).then(checkApiRes)
